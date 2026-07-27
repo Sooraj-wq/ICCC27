@@ -1,0 +1,65 @@
+export const pricingPlans = [
+  {
+    id: 1,
+    name: "Indian Student Author",
+    price: "₹7,500",
+    description: "Early bird rate for student authors",
+    perks: [
+      "Paper publication in IEEE Xplore",
+      "Access to all technical sessions",
+      "Conference kit & proceedings",
+      "Lunches & tea breaks (3 days)",
+      "Certificate of presentation",
+    ],
+    popular: false,
+    cta: "Register as Student",
+    note: "₹8,500 standard rate after deadline",
+  },
+  {
+    id: 2,
+    name: "Indian Author (Academia)",
+    price: "₹8,000",
+    description: "Early bird rate for academic authors",
+    perks: [
+      "Paper publication in IEEE Xplore",
+      "Access to all technical sessions",
+      "Conference kit & proceedings",
+      "All meals & banquet",
+      "Certificate of presentation",
+      "Session participation",
+    ],
+    popular: true,
+    cta: "Register as Author",
+    note: "₹9,000 standard rate after deadline",
+  },
+  {
+    id: 3,
+    name: "Foreign Author",
+    price: "$250",
+    description: "Early bird rate for international authors",
+    perks: [
+      "Paper publication in IEEE Xplore",
+      "Access to all sessions & workshops",
+      "Conference kit & proceedings",
+      "All meals & gala dinner",
+      "Certificate of presentation",
+      "Visa invitation letter",
+    ],
+    popular: false,
+    cta: "Register as Author",
+    note: "$300 standard rate after deadline",
+  },
+];
+
+export const fullFeeTable = {
+  headers: ["Category", "Early Bird (IEEE)", "Early Bird (Non-IEEE)", "Standard (IEEE)", "Standard (Non-IEEE)"],
+  rows: [
+    ["Indian Author (Academia)", "₹8,000", "₹9,500", "₹9,000", "₹10,500"],
+    ["Indian Author (Industry)", "₹9,000", "₹10,500", "₹10,000", "₹11,500"],
+    ["Indian Student Author", "₹7,500", "₹8,500", "₹8,500", "₹9,500"],
+    ["Indian Non-Author Attendee", "₹6,000", "₹7,000", "₹7,000", "₹8,000"],
+    ["Foreign Author", "$250", "$300", "$300", "$350"],
+    ["Foreign Student Author", "$200", "$250", "$250", "$300"],
+  ],
+  additionalPaperRate: "₹2,000/paper (Early) • ₹3,000/paper (Standard) — Indian | $50/paper (Early) • $75/paper (Standard) — Foreign",
+};
