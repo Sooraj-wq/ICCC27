@@ -9,6 +9,7 @@ import CallForPapers from "./pages/CallForPapers";
 import Speakers from "./pages/Speakers";
 import Venue from "./pages/Venue";
 import Contact from "./pages/Contact";
+import CmtAcknowledgement from "./pages/CmtAcknowledgement";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
           <Route path="/speakers" element={<Speakers />} />
           <Route path="/venue" element={<Venue />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/cmt-acknowledgement" element={<CmtAcknowledgement />} />
         </Route>
       </Routes>
     </BrowserRouter>

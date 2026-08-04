@@ -13,6 +13,7 @@ const navLinks = [
   { label: "Call for Papers", path: "/call-for-papers" },
   { label: "Venue", path: "/venue" },
   { label: "Contact", path: "/contact" },
+  { label: "CMT Acknowledgement", path: "/cmt-acknowledgement" },
 ];
 
 export default function Navbar() {

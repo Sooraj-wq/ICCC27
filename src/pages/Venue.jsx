@@ -3,11 +3,6 @@ import GlassCard from "../components/GlassCard";
 import SectionDivider from "../components/SectionDivider";
 import { FiMapPin, FiNavigation, FiSend } from "react-icons/fi";
 
-const hotels = [
-  { name: "Hotel Mascot", rating: "4-Star", distance: "2.5 km from CET", code: "ICCC2027", discount: "10% off" },
-  { name: "The South Park", rating: "5-Star", distance: "4.0 km from CET", code: "ICCC2027", discount: "12% off" },
-  { name: "Hotel Pankaj", rating: "3-Star", distance: "1.5 km from CET", code: "ICCC2027", discount: "10% off" },
-];
 
 export default function Venue() {
   return (
@@ -112,44 +107,7 @@ export default function Venue() {
             </div>
           </GlassCard>
         </div>
-      </section>
-
-      <SectionDivider />
-
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
-        <div className="text-center mb-12">
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-gray-900">
-            Accommodations
-          </h2>
-          <p className="mt-3 text-blue-600 max-w-lg mx-auto">
-            Partner hotels with special conference rates.
-          </p>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {hotels.map((hotel) => (
-            <GlassCard key={hotel.name} className="p-6">
-              <div className="flex items-start justify-between mb-3">
-                <div>
-                  <h3 className="font-display text-base font-semibold text-gray-900">
-                    {hotel.name}
-                  </h3>
-                  <span className="text-xs text-blue-500">{hotel.rating}</span>
-                </div>
-                <span className="text-xs text-blue-600 font-medium bg-blue-100 px-2 py-1 rounded-full">
-                  {hotel.discount}
-                </span>
-              </div>
-              <p className="text-xs text-blue-600 mb-4">{hotel.distance}</p>
-              <div className="flex items-center justify-between p-3 rounded-lg bg-white/70 border border-gray-200/50">
-                <span className="text-xs text-blue-500">Code:</span>
-                <span className="text-xs font-mono font-semibold text-blue-600">
-                  {hotel.code}
-                </span>
-              </div>
-            </GlassCard>
-          ))}
-        </div>
-      </section>
+      </section>      
     </div>
   );
 }
