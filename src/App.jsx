@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
 import Home from "./pages/Home";
-import About from "./pages/About";
 import Committee from "./pages/Committee";
 import Schedule from "./pages/Schedule";
 import Registration from "./pages/Registration";
@@ -17,7 +16,6 @@ export default function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="/about" element={<About />} />
           <Route path="/committee" element={<Committee />} />
           <Route path="/schedule" element={<Schedule />} />
           <Route path="/registration" element={<Registration />} />

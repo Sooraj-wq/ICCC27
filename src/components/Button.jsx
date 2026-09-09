@@ -5,7 +5,7 @@ export default function Button({
   ...props
 }) {
   const base =
-    "inline-flex items-center gap-2 px-6 py-3 rounded-full font-medium text-sm tracking-wide transition-all duration-300 ease-in-out cursor-pointer";
+    "inline-flex items-center gap-2 px-6 py-3 rounded-full font-medium text-base tracking-wide transition-all duration-300 ease-in-out cursor-pointer";
 
   const styles = {
     primary:

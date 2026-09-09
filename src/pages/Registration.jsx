@@ -1,9 +1,65 @@
 import GradientBlob from "../components/GradientBlob";
 import GlassCard from "../components/GlassCard";
-import Button from "../components/Button";
-import SectionDivider from "../components/SectionDivider";
-import { pricingPlans } from "../data/registration";
-import { FiCheck } from "react-icons/fi";
+import { FiClock } from "react-icons/fi";
+
+const feeRows = [
+  {
+    category: "Indian Author (Academia)",
+    earlyIEEE: "₹8,000",
+    earlyNonIEEE: "₹9,500",
+    stdIEEE: "₹9,000",
+    stdNonIEEE: "₹10,500",
+  },
+  {
+    category: "Indian Author (Industry)",
+    earlyIEEE: "₹9,000",
+    earlyNonIEEE: "₹10,500",
+    stdIEEE: "₹10,000",
+    stdNonIEEE: "₹11,500",
+  },
+  {
+    category: "Indian Student Author",
+    earlyIEEE: "₹7,500",
+    earlyNonIEEE: "₹8,500",
+    stdIEEE: "₹8,500",
+    stdNonIEEE: "₹9,500",
+  },
+  {
+    category: "Indian Non-Author Attendee",
+    earlyIEEE: "₹6,000",
+    earlyNonIEEE: "₹7,000",
+    stdIEEE: "₹7,000",
+    stdNonIEEE: "₹8,000",
+  },
+  {
+    category: "Indian Author — Additional Paper Rate*",
+    earlyIEEE: "₹2,000/paper",
+    earlyNonIEEE: "₹2,000/paper",
+    stdIEEE: "₹3,000/paper",
+    stdNonIEEE: "₹3,000/paper",
+  },
+  {
+    category: "Foreign Author",
+    earlyIEEE: "$250",
+    earlyNonIEEE: "$300",
+    stdIEEE: "$300",
+    stdNonIEEE: "$350",
+  },
+  {
+    category: "Foreign Student Author",
+    earlyIEEE: "$200",
+    earlyNonIEEE: "$250",
+    stdIEEE: "$250",
+    stdNonIEEE: "$300",
+  },
+  {
+    category: "Foreign Author — Additional Papers*",
+    earlyIEEE: "$50/paper",
+    earlyNonIEEE: "$50/paper",
+    stdIEEE: "$75/paper",
+    stdNonIEEE: "$75/paper",
+  },
+];
 
 export default function Registration() {
   return (
@@ -11,143 +67,115 @@ export default function Registration() {
       <GradientBlob className="top-[-100px] left-[-200px]" />
       <GradientBlob className="bottom-[-200px] right-[-200px]" />
 
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
         <div className="text-center mb-12">
-          <span className="text-xs uppercase tracking-[0.2em] text-blue-500 font-medium">
+          <span className="text-sm uppercase tracking-[0.2em] text-blue-500 font-medium">
             Registration
           </span>
-          <h1 className="font-display text-4xl sm:text-5xl font-bold text-gray-900 mt-4">
-            Choose Your{" "}
+          <h1 className="font-display text-5xl sm:text-6xl font-bold text-gray-900 mt-4">
+            Registration{" "}
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-indigo-500">
-              Pass
+              Fees
             </span>
           </h1>
-          <p className="mt-3 text-blue-600 max-w-lg mx-auto">
-            Select the registration type that fits you best.
-          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {pricingPlans.map((plan) => (
-            <GlassCard
-              key={plan.id}
-              className={`relative p-6 sm:p-8 flex flex-col ${
-                plan.popular ? "border-blue-400 ring-1 ring-blue-200" : ""
-              }`}
-            >
-              {plan.popular && (
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-gradient-to-r from-blue-500 to-indigo-500 text-white text-xs font-semibold tracking-wide">
-                  Most Popular
-                </span>
-              )}
-              <div className="mb-6">
-                <h3 className="font-display text-lg font-semibold text-gray-900">
-                  {plan.name}
-                </h3>
-                <p className="text-blue-600 text-sm mt-1">{plan.description}</p>
-                <p className="mt-4">
-                  <span className="font-display text-4xl font-bold text-gray-900">
-                    {plan.price}
-                  </span>
-                  <span className="text-blue-500 text-sm ml-1">/ person</span>
-                </p>
-              </div>
-              <ul className="space-y-3 mb-8 flex-1">
-                {plan.perks.map((perk) => (
-                  <li key={perk} className="flex items-start gap-3 text-sm text-blue-500">
-                    <FiCheck className="text-blue-600 mt-0.5 shrink-0" size={16} />
-                    {perk}
-                  </li>
-                ))}
-              </ul>
-              <Button
-                variant={plan.popular ? "primary" : "secondary"}
-                className="w-full justify-center"
-              >
-                {plan.cta}
-              </Button>
-            </GlassCard>
-          ))}
-        </div>
-      </section>
-
-      <SectionDivider />
-
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
-        <div className="text-center mb-10">
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-gray-900">
-            Secure Your Spot
+        <GlassCard className="max-w-2xl mx-auto p-10 sm:p-14 text-center">
+          <FiClock className="mx-auto text-blue-600" size={32} />
+          <h2 className="font-display text-3xl sm:text-4xl font-bold text-gray-900 mt-4">
+            Registrations will start soon
           </h2>
-          <p className="mt-3 text-blue-600 max-w-lg mx-auto">
-            Fill in your details to complete registration.
+          <p className="mt-3 text-lg text-blue-600">
+            Online registration will open shortly. Please check back soon.
           </p>
-        </div>
-        <GlassCard className="max-w-2xl mx-auto p-6 sm:p-8">
-          <form onSubmit={(e) => e.preventDefault()} className="space-y-5">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-              <div>
-                <label className="block text-xs text-blue-600 mb-1.5 font-medium">
-                  First Name
-                </label>
-                <input
-                  type="text"
-                  className="w-full bg-white border border-gray-300 rounded-lg px-4 py-3 text-gray-900 text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-all duration-200"
-                  placeholder="John"
-                />
-              </div>
-              <div>
-                <label className="block text-xs text-blue-600 mb-1.5 font-medium">
-                  Last Name
-                </label>
-                <input
-                  type="text"
-                  className="w-full bg-white border border-gray-300 rounded-lg px-4 py-3 text-gray-900 text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-all duration-200"
-                  placeholder="Doe"
-                />
-              </div>
-            </div>
-            <div>
-              <label className="block text-xs text-blue-600 mb-1.5 font-medium">
-                Email Address
-              </label>
-              <input
-                type="email"
-                className="w-full bg-white border border-gray-300 rounded-lg px-4 py-3 text-gray-900 text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-all duration-200"
-                placeholder="john@example.com"
-              />
-            </div>
-            <div>
-              <label className="block text-xs text-blue-600 mb-1.5 font-medium">
-                Institution / Organization
-              </label>
-              <input
-                type="text"
-                className="w-full bg-white border border-gray-300 rounded-lg px-4 py-3 text-gray-900 text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-all duration-200"
-                placeholder="University of Tokyo"
-              />
-            </div>
-            <div>
-              <label className="block text-xs text-blue-600 mb-1.5 font-medium">
-                Registration Type
-              </label>
-              <select className="w-full bg-white border border-gray-300 rounded-lg px-4 py-3 text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-all duration-200 appearance-none">
-                <option value="" className="bg-deep">Select a pass type</option>
-                {pricingPlans.map((p) => (
-                  <option key={p.id} value={p.name} className="bg-deep">
-                    {p.name} — {p.price}
-                  </option>
-                ))}
-              </select>
-            </div>
-            <Button variant="primary" className="w-full justify-center py-3.5">
-              Complete Registration
-            </Button>
-            <p className="text-xs text-blue-500 text-center">
-              🔒 Your information is encrypted and secure. We never share your
-              data.
-            </p>
-          </form>
         </GlassCard>
+
+        <div className="text-center mt-20 mb-10">
+          <h2 className="font-display text-4xl sm:text-5xl font-bold text-gray-900">
+            Fee{" "}
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-indigo-500">
+              Structure
+            </span>
+          </h2>
+        </div>
+
+        <GlassCard className="overflow-hidden p-0 sm:p-2">
+          <div className="overflow-x-auto">
+            <table className="w-full text-left border-collapse table-fixed min-w-[700px]">
+              <colgroup>
+                <col className="w-[36%]" />
+                <col className="w-[16%]" />
+                <col className="w-[16%]" />
+                <col className="w-[16%]" />
+                <col className="w-[16%]" />
+              </colgroup>
+              <thead>
+                <tr className="text-xs uppercase tracking-wider">
+                  <th
+                    rowSpan={2}
+                    className="px-5 py-4 text-left align-middle font-bold text-gray-900 border-b border-gray-200/60 bg-gray-50/80"
+                  >
+                    Category
+                  </th>
+                  <th
+                    colSpan={2}
+                    className="px-3 py-3 text-center font-bold text-blue-600 border-b border-l border-gray-200/60 bg-blue-50/50"
+                  >
+                    Early Bird Rates
+                  </th>
+                  <th
+                    colSpan={2}
+                    className="px-3 py-3 text-center font-bold text-indigo-600 border-b border-l border-gray-200/60 bg-indigo-50/50"
+                  >
+                    Standard Rates
+                  </th>
+                </tr>
+                <tr className="text-xs uppercase tracking-wider text-gray-600">
+                  <th className="px-3 py-3 text-center font-semibold border-b border-l border-gray-200/60 bg-gray-50/50">
+                    IEEE Member
+                  </th>
+                  <th className="px-3 py-3 text-center font-semibold border-b border-gray-200/60 bg-gray-50/50">
+                    Non-IEEE
+                  </th>
+                  <th className="px-3 py-3 text-center font-semibold border-b border-l border-gray-200/60 bg-gray-50/50">
+                    IEEE Member
+                  </th>
+                  <th className="px-3 py-3 text-center font-semibold border-b border-gray-200/60 bg-gray-50/50">
+                    Non-IEEE
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200/50 text-sm">
+                {feeRows.map((row) => (
+                  <tr
+                    key={row.category}
+                    className="hover:bg-gray-50/50 transition-colors duration-200"
+                  >
+                    <td className="px-5 py-4 font-medium text-gray-900 break-words">
+                      {row.category}
+                    </td>
+                    <td className="px-3 py-4 text-center border-l border-gray-200/50 text-blue-600 font-semibold">
+                      {row.earlyIEEE}
+                    </td>
+                    <td className="px-3 py-4 text-center text-gray-700">
+                      {row.earlyNonIEEE}
+                    </td>
+                    <td className="px-3 py-4 text-center border-l border-gray-200/50 text-indigo-600 font-semibold">
+                      {row.stdIEEE}
+                    </td>
+                    <td className="px-3 py-4 text-center text-gray-700">
+                      {row.stdNonIEEE}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </GlassCard>
+
+        <p className="text-center mt-6 text-sm text-gray-500">
+          * Additional paper charges apply per paper.
+        </p>
       </section>
     </div>
   );
