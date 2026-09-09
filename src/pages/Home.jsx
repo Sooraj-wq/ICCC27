@@ -135,7 +135,7 @@ export default function Home() {
             {"  "}<span className="text-indigo-600">focus</span>: [
             {"\n"}
             {"    "}<span className="text-blue-600">
-              "Intelligent Control Systems"
+              "AI & Machine Learning"
             </span>
             {","}
             {"\n"}
@@ -145,7 +145,7 @@ export default function Home() {
             {","}
             {"\n"}
             {"    "}<span className="text-blue-600">
-              "AI & Machine Learning"
+              "Intelligent Control Systems"
             </span>
             {","}
             {"\n"}
