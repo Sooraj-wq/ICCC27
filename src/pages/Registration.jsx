@@ -92,6 +92,58 @@ export default function Registration() {
 
         <div className="text-center mt-20 mb-10">
           <h2 className="font-display text-4xl sm:text-5xl font-bold text-gray-900">
+            Registration{" "}
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-indigo-500">
+              Guidelines
+            </span>
+          </h2>
+        </div>
+
+        <GlassCard className="max-w-4xl mx-auto p-6 sm:p-10">
+          <ul className="space-y-5">
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2.5 shrink-0" />
+              <p className="text-base sm:text-lg text-gray-900 leading-relaxed">
+                At least one of the authors of each accepted paper must register
+                for the conference for the paper to be included in the conference
+                proceedings and published through IEEE Xplore. Registration fee
+                covers conference proceedings, conference kit, coffee breaks,
+                working lunch and banquet dinner.
+              </p>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2.5 shrink-0" />
+              <p className="text-base sm:text-lg text-gray-900 leading-relaxed">
+                A full registration covers the registration of one paper. You may
+                register an additional paper for a fee of ₹2,000 or $50. Please
+                note that while the additional paper will be included in the
+                conference proceedings and presentation certificates will be
+                issued, it will not be submitted to IEEE Xplore for possible
+                publication. Only papers associated with a full author
+                registration will be eligible for possible publication in IEEE
+                Xplore.
+              </p>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2.5 shrink-0" />
+              <p className="text-base sm:text-lg text-gray-900 leading-relaxed">
+                The maximum length of the paper is 6 pages including references.
+                A fee of ₹1,000 or $25 will be applied for each additional page
+                (with a maximum of 2 pages).
+              </p>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2.5 shrink-0" />
+              <p className="text-base sm:text-lg text-gray-900 leading-relaxed">
+                Accepted and presented papers of ICCC 2027 will be submitted for
+                possible publication in the IEEE Xplore® Digital Library.
+              </p>
+            </li>
+          </ul>
+        </GlassCard>
+
+        <div className="text-center mt-20 mb-10">
+          <h2 className="font-display text-4xl sm:text-5xl font-bold text-gray-900">
             Fee{" "}
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-indigo-500">
               Structure

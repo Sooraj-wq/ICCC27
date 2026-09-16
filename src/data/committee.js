@@ -341,7 +341,7 @@ export const advisory = [
     ],
   },
   {
-    region: "Outside Keralam",
+    region: "National",
     members: [
       { name: "Prof. (Dr.) Hemendra Arya", affiliation: "IIT Bombay" },
       { name: "Prof. (Dr.) Sikha Hota", affiliation: "IIT Kharagpur" },
@@ -359,7 +359,7 @@ export const advisory = [
     ],
   },
   {
-    region: "From Abroad",
+    region: "International",
     members: [
       { name: "Prof. (Dr.) Aditya Paranjape", affiliation: "Monash University, Australia" },
       { name: "Prof. (Dr.) Prahlad Vadakkepat", affiliation: "College of Design and Engineering, National University of Singapore" },

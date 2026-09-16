@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 
 export default function Layout() {
   return (
-    <div className="min-h-screen bg-deep text-gray-900 font-sans antialiased">
+    <div className="min-h-screen bg-deep text-gray-900 font-sans antialiased grid-bg">
       <Navbar />
       <main className="pt-16">
         <Outlet />

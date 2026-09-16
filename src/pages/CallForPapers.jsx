@@ -1,11 +1,9 @@
 import GradientBlob from "../components/GradientBlob";
 import GlassCard from "../components/GlassCard";
-import SectionDivider from "../components/SectionDivider";
-import { submissionDates } from "../data/schedule";
 
 const tracks = [
   {
-    title: "Track 3: Computing & Intelligent Systems",
+    title: "Track 1: Computing & Intelligent Systems",
     topics: [
       "Advanced Algorithms",
       "Big Data, Cloud Computing and IoT",
@@ -42,7 +40,7 @@ const tracks = [
     ],
   },
   {
-    title: "Track 1: Control Systems & Applications",
+    title: "Track 3: Control Systems & Applications",
     topics: [
       "Architectures for Intelligent Control",
       "Automotive Control Systems",
@@ -67,8 +65,8 @@ export default function CallForPapers() {
     <div className="relative overflow-hidden pt-24">
       <GradientBlob className="top-[-100px] right-[-200px]" />
 
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
-        <div className="text-center mb-12">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-6">
           <span className="text-sm uppercase tracking-[0.2em] text-blue-500 font-medium">
             Call for Papers
           </span>
@@ -82,40 +80,12 @@ export default function CallForPapers() {
             We invite original, high-quality research contributions in control, communication, and computing.
           </p>
         </div>
-
-        <div className="max-w-4xl mx-auto mb-16">
-          <h2 className="font-display text-3xl font-bold text-gray-900 mb-8 text-center">
-            Important Dates
-          </h2>
-          <div className="relative">
-            <div className="absolute top-1/2 left-0 right-0 h-px bg-gray-200/50 hidden lg:block" />
-            <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-0">
-              {submissionDates.map((m, i) => (
-                <div
-                  key={m.label}
-                  className="relative flex lg:flex-col items-center lg:text-center gap-4 lg:gap-3"
-                >
-                  <div className="relative z-10 w-4 h-4 shrink-0 rounded-full bg-deep border-2 border-amber-500 shadow-[0_0_12px_rgba(251,191,36,0.5)]" />
-                  <div>
-                    <p className="text-base font-semibold text-amber-600 font-mono">
-                      {m.date}
-                    </p>
-                    <p className="text-sm text-blue-600 mt-0.5">{m.label}</p>
-                  </div>
-                  {i < submissionDates.length - 1 && (
-                    <div className="hidden lg:block absolute top-4 left-[calc(50%+1rem)] right-[calc(-50%+1rem)] h-px bg-gradient-to-r from-amber-500/50 to-transparent" />
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
       </section>
 
-      <SectionDivider />
+      <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent my-6" />
 
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
-        <div className="text-center mb-12">
+        <div className="text-center mb-8">
           <h2 className="font-display text-4xl sm:text-5xl font-bold text-gray-900">
             Tracks &amp; Topics
           </h2>
@@ -143,16 +113,10 @@ export default function CallForPapers() {
             </GlassCard>
           ))}
         </div>
-        <div className="text-center mt-10 space-y-2">
+        <div className="text-center mt-8">
           <p className="text-blue-600 text-base">
             Review Process: Single-blind &bull; Minimum 2 reviewers per paper
           </p>
-          <a
-            href="#"
-            className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-500 text-base font-medium transition-colors duration-200"
-          >
-            View submission guidelines ↗
-          </a>
         </div>
       </section>
     </div>
