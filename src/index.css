@@ -4,6 +4,9 @@
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
   --font-display: 'Space Grotesk', 'Inter', system-ui, sans-serif;
 
+  --text-base: 1.25rem;
+  --text-lg: 1.375rem;
+
   --color-deep: #FAFAFA;
   --color-deep-2: #F3F4F6;
   --color-card: rgba(255, 255, 255, 0.7);
