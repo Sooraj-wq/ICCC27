@@ -73,7 +73,7 @@ export default function CallForPapers() {
           <h1 className="font-display text-5xl sm:text-6xl font-bold text-gray-900 mt-4">
             Submit Your{" "}
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-indigo-500">
-              Research
+              Work
             </span>
           </h1>
           <p className="mt-3 text-lg text-blue-600 max-w-lg mx-auto">

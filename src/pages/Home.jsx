@@ -2,6 +2,7 @@ import GradientBlob from "../components/GradientBlob";
 import GlassCard from "../components/GlassCard";
 import Button from "../components/Button";
 import SectionDivider from "../components/SectionDivider";
+import Carousel from "../components/Carousel";
 import { submissionDates } from "../data/schedule";
 import { FiCalendar, FiMapPin, FiUsers, FiArrowRight } from "react-icons/fi";
 
@@ -42,10 +43,16 @@ export default function Home() {
                 ICCC 2027 provides an international platform for researchers, academicians, industry professionals, and students to share innovative ideas, recent research findings, and technological advancements.
               </p>
               <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-8">
-                <Button variant="primary" className="text-base sm:text-lg px-8 py-3.5">
-                  Submit
-                  <FiArrowRight size={16} />
-                </Button>
+                <a
+                  href="https://cmt3.research.microsoft.com/ICCC2027/Submission/Manage"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button variant="primary" className="text-base sm:text-lg px-8 py-3.5">
+                    Submit
+                    <FiArrowRight size={16} />
+                  </Button>
+                </a>
                 <a
                   href="https://drive.google.com/file/d/1GpA4St1l0AfmpkZy46o7p3PJWgw8LW26/view?usp=drive_link"
                   target="_blank"
@@ -168,7 +175,7 @@ export default function Home() {
 
       <SectionDivider />
 
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
         <div className="text-center mb-10">
           <h2 className="font-display text-4xl sm:text-5xl font-bold text-gray-900">
             Conference Theme
@@ -225,6 +232,60 @@ export default function Home() {
             <span className="text-purple-600">{`}`}</span>
           </pre>
         </GlassCard>
+      </section>
+
+      <SectionDivider className="my-6" />
+
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
+        <div className="text-center mb-10">
+          <h2 className="font-display text-4xl sm:text-5xl font-bold text-gray-900">
+            Previous Instances
+          </h2>
+          <p className="mt-3 text-lg text-blue-600 max-w-lg mx-auto">
+            Explore the proceedings of our past conferences.
+          </p>
+        </div>
+        <Carousel>
+          {[
+            {
+              label: "ICCC 2013",
+              href: "https://ieeexplore.ieee.org/xpl/conhome/6720229/proceeding",
+            },
+            {
+              label: "ICCC 2015",
+              href: "https://ieeexplore.ieee.org/xpl/conhome/7428759/proceeding",
+            },
+            {
+              label: "ICCC 2018",
+              href: "https://ieeexplore.ieee.org/xpl/conhome/8510754/proceeding",
+            },
+            {
+              label: "ICCC 2023",
+              href: "https://ieeexplore.ieee.org/xpl/conhome/10164829/proceeding",
+            },
+            {
+              label: "ICCC 2025",
+              href: "https://ieeexplore.ieee.org/xpl/conhome/11076186/proceeding",
+            },
+          ].map((item) => (
+            <a
+              key={item.label}
+              href={item.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="snap-start shrink-0 w-[85%] sm:w-[340px]"
+            >
+              <GlassCard className="p-6 text-center h-full hover:shadow-lg hover:scale-[1.02] transition-all duration-300">
+                <p className="font-display text-xl font-semibold text-gray-900">
+                  {item.label}
+                </p>
+                <p className="mt-2 text-sm text-blue-600">
+                  View Proceedings
+                </p>
+              </GlassCard>
+            </a>
+          ))}
+        </Carousel>
       </section>
     </div>
   );

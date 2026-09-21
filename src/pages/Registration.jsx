@@ -73,9 +73,9 @@ export default function Registration() {
             Registration
           </span>
           <h1 className="font-display text-5xl sm:text-6xl font-bold text-gray-900 mt-4">
-            Registration{" "}
+            Fee{" "}
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-indigo-500">
-              Fees
+              Structure
             </span>
           </h1>
         </div>

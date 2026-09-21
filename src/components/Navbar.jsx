@@ -47,6 +47,11 @@ export default function Navbar() {
               className="h-8 sm:h-10 w-auto brightness-0 invert"
             />
             <span className="h-6 w-px bg-white/20 hidden sm:block" />
+            <img
+              src="/conference-logo.svg"
+              alt="ICCC 2027"
+              className="h-8 sm:h-10 w-auto hidden sm:block"
+            />
             <span className="font-display text-2xl sm:text-3xl font-extrabold tracking-wider text-white ml-3">
               ICCC'27
             </span>
@@ -108,14 +113,21 @@ export default function Navbar() {
 
           {/* Far Right: Submit Button, Mobile Menu, & CET Logo */}
           <div className="flex items-center gap-3 sm:gap-4 shrink-0">
-            <Button
-              variant="primary"
-              className="text-xs px-5 py-2 hidden sm:inline-flex"
-              style={{ background: "#FFFFFF", color: "#2563EB" }}
+            <a
+              href="https://cmt3.research.microsoft.com/ICCC2027/Submission/Manage"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden sm:inline"
             >
-              <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse" />
-              Submit
-            </Button>
+              <Button
+                variant="primary"
+                className="text-xs px-5 py-2 hidden sm:inline-flex"
+                style={{ background: "#FFFFFF", color: "#2563EB" }}
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse" />
+                Submit
+              </Button>
+            </a>
 
             {/* Mobile Menu Toggle Button */}
             <button
@@ -129,9 +141,9 @@ export default function Navbar() {
             {/* Far Right: CET Logo (Bigger) */}
             <Link to="/" className="flex items-center shrink-0">
               <img
-                src="/cetLogo.svg"
+                src="/assets/cet-logo.png"
                 alt="CET"
-                className="h-11 sm:h-14 w-auto brightness-0 invert"
+                className="h-11 sm:h-14 w-auto"
               />
             </Link>
           </div>
@@ -178,14 +190,20 @@ export default function Navbar() {
               )}
             </div>
           ))}
-          <Button
-            variant="primary"
-            className="w-full justify-center mt-3"
-            style={{ background: "#FFFFFF", color: "#2563EB" }}
+          <a
+            href="https://cmt3.research.microsoft.com/ICCC2027/Submission/Manage"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse" />
-            Submit Now
-          </Button>
+            <Button
+              variant="primary"
+              className="w-full justify-center mt-3"
+              style={{ background: "#FFFFFF", color: "#2563EB" }}
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse" />
+              Submit Now
+            </Button>
+          </a>
         </div>
       </div>
     </nav>
