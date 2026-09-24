@@ -176,6 +176,23 @@ export default function AuthorGuidelines() {
                   </li>
                 </ol>
               </div>
+
+              <div>
+                <h3 className="font-display text-2xl font-semibold text-gray-900 mb-4">
+                  AI Usage Disclosure
+                </h3>
+                <p className="text-base sm:text-lg text-gray-900 leading-relaxed">
+                  During the preparation of this manuscript, the authors used
+                  generative artificial intelligence tools, including ChatGPT, for
+                  limited assistance with language editing, grammar correction,
+                  clarity of expression, and refinement of the presentation. The
+                  tools were not used to generate, validate, or interpret the
+                  research results, experimental findings, or scientific
+                  conclusions. The authors have reviewed and verified all content
+                  and remain fully responsible for the accuracy, originality, and
+                  integrity of the manuscript.
+                </p>
+              </div>
             </div>
           )}
 

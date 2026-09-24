@@ -4,7 +4,7 @@ export const leadership = [
     items: [
       {
         role: "Chief Patron",
-        name: "Dr. A. Jayathilak IAS",
+        name: "Bishwanath Sinha, IAS",
         affiliation: "Chief Secretary, Government of Kerala",
       },
       {
@@ -212,7 +212,7 @@ export const committees = [
           { name: "Dr. Anu A G", affiliation: "Assistant Professor, Dept. of EE, CET" },
           { name: "Dr. Deepa M U", affiliation: "Assistant Professor, Dept. of EE, CET" },
           { name: "Dr. Anurenjan P R", affiliation: "Assistant Professor, Dept. of ECE, CET" },
-          { name: "Prof. Neethi Mohan", affiliation: "Assistant Professor, Dept. of CSE, CET" },
+          { name: "Prof. Asha O T", affiliation: "Assistant Professor, Dept. of CSE, CET" },
         ],
       },
     ],
@@ -234,7 +234,7 @@ export const committees = [
           { name: "Dr. Nikhil M", affiliation: "Assistant Professor, Dept. of ECE, CET" },
           { name: "Mrs. Prasobha K Prasad", affiliation: "Instructor Gr. I, Dept. of ECE, CET" },
           { name: "Mr. Feroz Khan A", affiliation: "Trade Instructor Sen. Gr., Dept. of CSE, CET" },
-          { name: "Prof. Arya S R", affiliation: "Assistant Professor, Dept. of CSE, CET" },
+          { name: "Prof. Aleena Sebastian", affiliation: "Assistant Professor, Dept. of CSE, CET" },
         ],
       },
     ],
@@ -275,7 +275,7 @@ export const committees = [
         people: [
           { name: "Dr. Zubin J B", affiliation: "Assistant Professor, Dept. of EE, CET" },
           { name: "Prof. Jithin R", affiliation: "Assistant Professor, Dept. of ECE, CET" },
-          { name: "Prof. Divya S K", affiliation: "Assistant Professor, Dept. of CSE, CET" },
+          { name: "Prof. Jeeva Susan Jacob", affiliation: "Assistant Professor, Dept. of CSE, CET" },
         ],
       },
     ],
@@ -314,7 +314,7 @@ export const committees = [
           { name: "Prof. Smitha K S", affiliation: "Assistant Professor, Dept. of EE, CET" },
           { name: "Prof. Reshma M S", affiliation: "Assistant Professor, Dept. of EE, CET" },
           { name: "Prof. Rencymol M V", affiliation: "Assistant Professor, Dept. of ECE, CET" },
-          { name: "Prof. Divya S", affiliation: "Assistant Professor, Dept. of CSE, CET" },
+          { name: "Prof. Najila A L", affiliation: "Assistant Professor, Dept. of CSE, CET" },
         ],
       },
     ],
@@ -370,5 +370,31 @@ export const advisory = [
       { name: "Prof. (Dr.) Arithra Roy", affiliation: "IMT Atlantique, France" },
       { name: "Prof. (Dr.) K.G. Subramanian", affiliation: "Liverpool Hope University, UK" },
     ],
+  },
+];
+
+export const steering = [
+  { name: "Prof. (Dr.) Jisha V. R.", designation: "Dean UG Studies, CET" },
+  { name: "Prof. (Dr.) Lekshmi A.", designation: "Dean PG Studies, CET" },
+  { name: "Prof. (Dr.) Sumesh Divakaran", designation: "Dean Research, CET" },
+  {
+    name: "Prof. (Dr.) Joseph Zacharias",
+    designation: "Dean Student Affairs, CET",
+  },
+  {
+    name: "Prof. (Dr.) Suneesh S.S.",
+    designation: "Dean International Affairs, CET",
+  },
+  {
+    name: "Prof. (Dr.) Arun Kishore W. C.",
+    designation: "Professor & Head, Dept of EE, CET",
+  },
+  {
+    name: "Prof. (Dr.) Shajahan E S",
+    designation: "Professor & Head, Dept of ECE, CET",
+  },
+  {
+    name: "Prof. (Dr.) Sabitha S",
+    designation: "Professor & Head, Dept of CSE, CET",
   },
 ];

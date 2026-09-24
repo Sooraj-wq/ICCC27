@@ -1,9 +1,9 @@
 import GradientBlob from "../components/GradientBlob";
 import GlassCard from "../components/GlassCard";
 import SectionDivider from "../components/SectionDivider";
-import { leadership, committees, advisory } from "../data/committee";
+import { leadership, committees } from "../data/committee";
 
-export default function Committee() {
+export default function OrganizingCommittee() {
   return (
     <div className="relative overflow-hidden pt-24">
       <GradientBlob className="top-[-100px] left-[-200px]" />
@@ -14,13 +14,13 @@ export default function Committee() {
             Committees
           </span>
           <h1 className="font-display text-5xl sm:text-6xl font-bold text-gray-900 mt-4">
-            Conference{" "}
+            Organizing{" "}
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-indigo-500">
-              Committees
+              Committee
             </span>
           </h1>
           <p className="mt-3 text-lg text-blue-600 max-w-2xl mx-auto">
-            Meet the patrons, organizers, and committee members steering ICCC 2027.
+            The success of our conference is made possible by the dedicated efforts of our esteemed organizing committee.
           </p>
         </div>
 
@@ -29,9 +29,7 @@ export default function Committee() {
             <h2 className="font-display text-2xl sm:text-3xl font-bold text-gray-900 text-center mb-6">
               {group.group}
             </h2>
-            <div
-              className={`grid gap-6 ${group.items.length === 3 ? "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3" : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"}`}
-            >
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {group.items.map((item) => (
                 <GlassCard key={item.name} className="p-6 text-center">
                   <span className="inline-block px-3 py-1 rounded-full bg-blue-100 border border-blue-300 text-blue-600 text-sm font-medium">
@@ -50,7 +48,7 @@ export default function Committee() {
 
       <SectionDivider />
 
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
         <div className="text-center mb-12">
           <h2 className="font-display text-4xl sm:text-5xl font-bold text-gray-900">
             Organizing <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-indigo-500">Committees</span>
@@ -81,36 +79,6 @@ export default function Committee() {
                 </div>
               ))}
             </div>
-          ))}
-        </div>
-      </section>
-
-      <SectionDivider />
-
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
-        <div className="text-center mb-12">
-          <h2 className="font-display text-4xl sm:text-5xl font-bold text-gray-900">
-            Advisory <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-indigo-500">Committee</span>
-          </h2>
-          <p className="mt-3 text-lg text-blue-600 max-w-lg mx-auto">
-            Distinguished advisors from institutions across the world.
-          </p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {advisory.map((region) => (
-            <GlassCard key={region.region} className="p-6 sm:p-8">
-              <h3 className="font-display text-lg font-semibold text-gray-900 mb-5">
-                {region.region}
-              </h3>
-              <ul className="space-y-4">
-                {region.members.map((member) => (
-                  <li key={member.name}>
-                    <p className="text-base text-gray-900 font-medium">{member.name}</p>
-                    <p className="text-sm text-blue-600">{member.affiliation}</p>
-                  </li>
-                ))}
-              </ul>
-            </GlassCard>
           ))}
         </div>
       </section>

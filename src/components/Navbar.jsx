@@ -6,7 +6,15 @@ import Button from "./Button";
 const navLinks = [
   { label: "Home", path: "/" },
   { label: "About", path: "/about" },
-  { label: "Committee", path: "/committee" },
+  {
+    label: "Committee",
+    path: "/committee/organizing",
+    children: [
+      { label: "Organizing Committee", path: "/committee/organizing" },
+      { label: "Advisory Committee", path: "/committee/advisory" },
+      { label: "Steering Committee", path: "/committee/steering" },
+    ],
+  },
   { label: "Schedule", path: "/schedule" },
   { label: "Speakers", path: "/speakers" },
   { label: "Registration", path: "/registration" },
