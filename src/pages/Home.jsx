@@ -54,7 +54,7 @@ export default function Home() {
                   </Button>
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/1GpA4St1l0AfmpkZy46o7p3PJWgw8LW26/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1V2l3laCZ1Kr49SsrQjwV9p_gWwKSjMkY"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

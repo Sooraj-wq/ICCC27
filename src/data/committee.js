@@ -376,13 +376,13 @@ export const advisory = [
 export const steering = [
   { name: "Prof. (Dr.) Jisha V. R.", designation: "Dean UG Studies, CET" },
   { name: "Prof. (Dr.) Lekshmi A.", designation: "Dean PG Studies, CET" },
-  { name: "Prof. (Dr.) Sumesh Divakaran", designation: "Dean Research, CET" },
+  { name: "Prof. (Dr.) Baiju Sasidharan", designation: "Dean Research, CET" },
   {
-    name: "Prof. (Dr.) Joseph Zacharias",
+    name: "Prof. (Dr.) Anil R",
     designation: "Dean Student Affairs, CET",
   },
   {
-    name: "Prof. (Dr.) Suneesh S.S.",
+    name: "Prof. (Dr.) Hari R",
     designation: "Dean International Affairs, CET",
   },
   {
