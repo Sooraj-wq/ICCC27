@@ -86,10 +86,10 @@ export default function Home() {
                 <item.icon className="text-blue-600" size={20} />
               </div>
               <div>
-                <p className="text-sm text-blue-500 uppercase tracking-widest">
+                <p className="text-sm sm:text-base text-blue-500 uppercase tracking-widest">
                   {item.label}
                 </p>
-                <p className="text-gray-900 font-medium text-base sm:text-lg">
+                <p className="text-gray-900 font-medium text-lg sm:text-2xl">
                   {item.value}
                 </p>
               </div>
@@ -134,13 +134,24 @@ export default function Home() {
           </h2>
         </div>
         <div className="relative">
-          <div className="absolute left-[7px] lg:left-1/2 lg:-translate-x-1/2 top-2 bottom-2 w-px bg-gradient-to-b from-amber-500/60 via-amber-500/30 to-transparent" />
           <div className="space-y-10">
             {submissionDates.map((m, i) => {
               const left = i % 2 === 0;
+              const done = m.status === "done";
               return (
                 <div key={m.label} className="relative flex items-center">
-                  <div className="absolute left-[3px] lg:left-1/2 lg:-translate-x-1/2 w-4 h-4 rounded-full bg-deep border-2 border-amber-500 shadow-[0_0_12px_rgba(251,191,36,0.5)]" />
+                  <div
+                    className={`absolute left-[7px] lg:left-1/2 lg:-translate-x-1/2 bottom-0 w-px ${
+                      i === 0 ? "top-0" : "-top-10"
+                    } ${done ? "bg-red-500" : "bg-amber-500/60"}`}
+                  />
+                  <div
+                    className={`absolute left-[3px] lg:left-1/2 lg:-translate-x-1/2 w-4 h-4 rounded-full ${
+                      done
+                        ? "bg-red-500 shadow-[0_0_12px_rgba(239,68,68,0.6)]"
+                        : "bg-deep border-2 border-amber-500 shadow-[0_0_12px_rgba(251,191,36,0.5)]"
+                    }`}
+                  />
                   <div
                     className={`pl-10 lg:w-1/2 lg:pl-0 ${
                       left ? "lg:text-right lg:pr-10" : "lg:ml-auto lg:pl-10"
