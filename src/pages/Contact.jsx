@@ -1,7 +1,6 @@
 import GradientBlob from "../components/GradientBlob";
 import GlassCard from "../components/GlassCard";
 import { FiMail, FiMapPin, FiPhone } from "react-icons/fi";
-import { FaTwitter, FaLinkedinIn, FaGithub, FaYoutube } from "react-icons/fa";
 
 export default function Contact() {
   return (
@@ -25,8 +24,8 @@ export default function Contact() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          <div className="space-y-6">
-            <GlassCard className="p-6 sm:p-8">
+          <div>
+            <GlassCard className="p-6 sm:p-8 h-full">
               <h2 className="font-display text-xl font-semibold text-gray-900 mb-5">
                 Contact Information
               </h2>
@@ -49,7 +48,17 @@ export default function Contact() {
                   <div>
                     <p className="text-sm text-blue-500 uppercase tracking-wider">Address</p>
                     <p className="text-base text-gray-900">College of Engineering Trivandrum</p>
-                    <p className="text-sm text-blue-600">Kulathoor, Thiruvananthapuram, Kerala 695583</p>
+                    <p className="text-sm text-blue-600">
+                      Engineering College P.O,
+                      <br />
+                      Sreekaryam,
+                      <br />
+                      Thiruvananthapuram,
+                      <br />
+                      Kerala
+                      <br />
+                      PIN 695016
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -65,29 +74,6 @@ export default function Contact() {
                 </div>
               </div>
             </GlassCard>
-
-            <GlassCard className="p-6 sm:p-8">
-              <h2 className="font-display text-xl font-semibold text-gray-900 mb-4">
-                Follow Us
-              </h2>
-              <div className="flex gap-3">
-                {[
-                  { icon: FaTwitter, label: "Twitter" },
-                  { icon: FaLinkedinIn, label: "LinkedIn" },
-                  { icon: FaGithub, label: "GitHub" },
-                  { icon: FaYoutube, label: "YouTube" },
-                ].map(({ icon: Icon, label }) => (
-                  <a
-                    key={label}
-                    href="#"
-                    className="w-10 h-10 rounded-xl bg-gray-100 border border-gray-200 flex items-center justify-center text-blue-600 hover:text-blue-600 hover:border-blue-300 transition-all duration-200"
-                    aria-label={label}
-                  >
-                    <Icon size={16} />
-                  </a>
-                ))}
-              </div>
-            </GlassCard>
           </div>
 
           <GlassCard className="p-6 sm:p-8">
@@ -100,8 +86,16 @@ export default function Contact() {
             <p className="text-base text-blue-600 mt-0.5">
               Organizing Secretary, ICCC 2027, College of Engineering Trivandrum
             </p>
-            <p className="text-base text-blue-600 mt-4">
-              Thiruvananthapuram, Kerala, India. PIN: 695016
+            <p className="text-base text-blue-600 mt-4 leading-relaxed">
+              Engineering College P.O,
+              <br />
+              Sreekaryam,
+              <br />
+              Thiruvananthapuram,
+              <br />
+              Kerala
+              <br />
+              PIN 695016
             </p>
             <div className="flex flex-wrap gap-3 mt-6">
               <a

@@ -33,10 +33,10 @@ const feeRows = [
   },
   {
     category: "Indian Author — Additional Paper Rate*",
-    earlyIEEE: "₹2,000/paper",
-    earlyNonIEEE: "₹2,000/paper",
-    stdIEEE: "₹3,000/paper",
-    stdNonIEEE: "₹3,000/paper",
+    earlyIEEE: "₹3,000/paper",
+    earlyNonIEEE: "₹3,000/paper",
+    stdIEEE: "₹4,000/paper",
+    stdNonIEEE: "₹4,000/paper",
   },
   {
     category: "Foreign Author",
@@ -68,17 +68,6 @@ export default function Registration() {
       <GradientBlob className="bottom-[-200px] right-[-200px]" />
 
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
-        <div className="text-center mb-12">
-          <span className="text-sm uppercase tracking-[0.2em] text-blue-500 font-medium">
-            Registration
-          </span>
-          <h1 className="font-display text-5xl sm:text-6xl font-bold text-gray-900 mt-4">
-            Fee{" "}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-indigo-500">
-              Structure
-            </span>
-          </h1>
-        </div>
 
         <GlassCard className="max-w-2xl mx-auto p-10 sm:p-14 text-center">
           <FiClock className="mx-auto text-blue-600" size={32} />
@@ -103,7 +92,7 @@ export default function Registration() {
           <ul className="space-y-5">
             <li className="flex items-start gap-3">
               <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2.5 shrink-0" />
-              <p className="text-base sm:text-lg text-gray-900 leading-relaxed">
+              <p className="text-base sm:text-lg text-gray-900 leading-relaxed text-justify">
                 At least one of the authors of each accepted paper must register
                 for the conference for the paper to be included in the conference
                 proceedings and published through IEEE Xplore. Registration fee
@@ -113,7 +102,7 @@ export default function Registration() {
             </li>
             <li className="flex items-start gap-3">
               <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2.5 shrink-0" />
-              <p className="text-base sm:text-lg text-gray-900 leading-relaxed">
+              <p className="text-base sm:text-lg text-gray-900 leading-relaxed text-justify">
                 A full registration covers the registration of one paper. You may
                 register an additional paper for a fee of ₹2,000 or $50. Please
                 note that while the additional paper will be included in the
@@ -126,7 +115,7 @@ export default function Registration() {
             </li>
             <li className="flex items-start gap-3">
               <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2.5 shrink-0" />
-              <p className="text-base sm:text-lg text-gray-900 leading-relaxed">
+              <p className="text-base sm:text-lg text-gray-900 leading-relaxed text-justify">
                 The maximum length of the paper is 6 pages including references.
                 A fee of ₹1,000 or $25 will be applied for each additional page
                 (with a maximum of 2 pages).
@@ -134,7 +123,7 @@ export default function Registration() {
             </li>
             <li className="flex items-start gap-3">
               <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2.5 shrink-0" />
-              <p className="text-base sm:text-lg text-gray-900 leading-relaxed">
+              <p className="text-base sm:text-lg text-gray-900 leading-relaxed text-justify">
                 Accepted and presented papers of ICCC 2027 will be submitted for
                 possible publication in the IEEE Xplore® Digital Library.
               </p>
@@ -226,7 +215,7 @@ export default function Registration() {
         </GlassCard>
 
         <p className="text-center mt-6 text-sm text-gray-500">
-          * Additional paper charges apply per paper.
+          * Additional paper charges apply per paper | Maximum of 2 submissions allowed.
         </p>
       </section>
     </div>

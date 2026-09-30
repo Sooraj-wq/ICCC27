@@ -9,16 +9,18 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           <div>
-            <Link to="/" className="flex items-center gap-2 mb-4">
-              <span className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-500 flex items-center justify-center text-white font-bold text-sm">
-                I
-              </span>
+            <Link to="/" className="flex items-center gap-3 mb-4">
+              <img
+                src="/conference-logo.svg"
+                alt="ICCC 2027"
+                className="h-8 w-auto brightness-0 invert"
+              />
               <span className="font-display font-semibold text-lg text-white">
-                ICCC<span className="text-blue-200">'27</span>
+                ICCC<span className="text-blue-200"> 2027</span>
               </span>
             </Link>
-            <p className="text-blue-100 text-sm leading-relaxed">
-              The 7th International Conference on Control, Communication and Computing — organized by the College of Engineering Trivandrum.
+            <p className="text-blue-100 text-sm leading-relaxed text-justify">
+              The 7<sup className="text-[0.7em]">th</sup> International Conference on Control, Communication and Computing — organized by the College of Engineering Trivandrum.
             </p>
           </div>
 

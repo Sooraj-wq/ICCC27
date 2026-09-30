@@ -73,9 +73,9 @@ export default function LocalAttractions() {
               Attractions
             </span>
           </h1>
-          <p className="mt-3 text-lg text-black max-w-3xl mx-auto leading-relaxed">
+          <p className="mt-3 text-lg text-black max-w-3xl mx-auto leading-relaxed text-justify">
             Trivandrum, officially known as Thiruvananthapuram, is the capital
-            of Kerala, India, renowned for its rich cultural heritage and
+            of Keralam, India, renowned for its rich cultural heritage and
             historical significance. The city is home to the famous
             Padmanabhaswamy Temple, a symbol of architectural brilliance and
             immense wealth. It houses significant institutions like the Vikram
@@ -105,7 +105,7 @@ export default function LocalAttractions() {
                   {attraction.name}
                 </h2>
                 <p className="text-sm text-blue-200 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  Explore on Kerala Tourism &rarr;
+                  Explore on Keralam Tourism &rarr;
                 </p>
               </div>
             </a>

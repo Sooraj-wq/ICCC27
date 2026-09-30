@@ -47,7 +47,7 @@ export default function Navbar() {
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           
-          {/* Far Left: IEEE Logo + ICCC'27 Text */}
+          {/* Far Left: IEEE Logo + ICCC 2027 Text */}
           <Link to="/" className="flex items-center gap-3 shrink-0">
             <img
               src="/ieeeLogo.svg"
@@ -58,10 +58,10 @@ export default function Navbar() {
             <img
               src="/conference-logo.svg"
               alt="ICCC 2027"
-              className="h-8 sm:h-10 w-auto hidden sm:block"
+              className="h-8 sm:h-10 w-auto hidden sm:block brightness-0 invert"
             />
-            <span className="font-display text-2xl sm:text-3xl font-extrabold tracking-wider text-white ml-3">
-              ICCC'27
+            <span className="font-display text-3xl sm:text-4xl font-black tracking-wider text-white -ml-2">
+ICCC 2027
             </span>
           </Link>
 

@@ -6,7 +6,7 @@ import { FiExternalLink } from "react-icons/fi";
 const moreAboutCET = [
   {
     title: "History and Governance",
-    text: "The College of Engineering Trivandrum (CET) is one of the most prestigious engineering institutions in Kerala, India. It was established in 1939 and is the first engineering college in the state, boasting a rich history of academic excellence. CET is governed by the Director of Technical Education Kerala, Govt. of Kerala and is affiliated with the APJ Abdul Kalam Technological University (KTU).",
+    text: "The College of Engineering Trivandrum (CET) is one of the most prestigious engineering institutions in Keralam, India. It was established in 1939 and is the first engineering college in the state, boasting a rich history of academic excellence. CET is governed by the Director of Technical Education Keralam, Govt. of Keralam and is affiliated with the APJ Abdul Kalam Technological University (KTU).",
   },
   {
     title: "Academic Programs",
@@ -26,14 +26,14 @@ const moreAboutCET = [
   },
   {
     title: "Location and Accessibility",
-    text: "The College of Engineering Trivandrum (CET) is conveniently located in Sreekariyam, Thiruvananthapuram, Kerala. The Trivandrum International Airport is approximately 11 kilometres away and takes around 25-30 minutes by car. The Trivandrum Central Railway Station is even closer, about 10 kilometres from the campus, and takes roughly 20-25 minutes by car. This proximity to significant transport hubs ensures that CET is easily accessible for students, faculty, and visitors.",
+    text: "The College of Engineering Trivandrum (CET) is conveniently located in Sreekariyam, Thiruvananthapuram, Keralam. The Trivandrum International Airport is approximately 11 kilometres away and takes around 25-30 minutes by car. The Trivandrum Central Railway Station is even closer, about 10 kilometres from the campus, and takes roughly 20-25 minutes by car. This proximity to significant transport hubs ensures that CET is easily accessible for students, faculty, and visitors.",
   },
 ];
 
 const departments = [
   {
     name: "Department of Computer Science and Engineering (CSE)",
-    text: "The CSE department at CET is at the forefront of digital innovation. Established in 1984, it is the oldest Computer Science school in Kerala, and has since then consistently produced industry leaders and cutting-edge research. The department's most prominent research interests are artificial intelligence, machine learning, cybersecurity, and big data analytics. With state-of-the-art laboratories and a faculty of distinguished experts, CSE at CET is shaping the future of computing technology.",
+    text: "The CSE department at CET is at the forefront of digital innovation. Established in 1984, it is the oldest Computer Science school in Keralam, and has since then consistently produced industry leaders and cutting-edge research. The department's most prominent research interests are artificial intelligence, machine learning, cybersecurity, and big data analytics. With state-of-the-art laboratories and a faculty of distinguished experts, CSE at CET is shaping the future of computing technology.",
     image: "/assets/CSEDept.jpg",
     alt: "Computer Science and Engineering Department",
     link: "https://cse.cet.ac.in",
@@ -71,7 +71,7 @@ export default function About() {
             </span>
           </h1>
           <p className="mt-3 text-lg text-blue-600 max-w-2xl mx-auto">
-            Kerala's first engineering college — beacon of excellence in
+            Keralam's first engineering college — beacon of excellence in
             technical education since 1939.
           </p>
         </div>
@@ -112,20 +112,20 @@ export default function About() {
         </div>
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
           <div>
-            <p className="text-lg text-gray-900 leading-relaxed">
+            <p className="text-lg text-gray-900 leading-relaxed text-justify">
               <strong>The College of Engineering Trivandrum (CET),</strong>{" "}
               established in 1939, stands as a beacon of excellence in technical
               education.
             </p>
-            <p className="mt-4 text-lg text-gray-900 leading-relaxed">
+            <p className="mt-4 text-lg text-gray-900 leading-relaxed text-justify">
               For 85 years, CET has been at the forefront of engineering
               education in India, consistently producing top-tier professionals
               and innovative research.
             </p>
-            <p className="mt-4 text-lg text-gray-900 leading-relaxed">
+            <p className="mt-4 text-lg text-gray-900 leading-relaxed text-justify">
               Our institution's rich history is matched only by its commitment
               to the future. From its humble beginnings as the first engineering
-              college in the state of Kerala, CET has grown into a prestigious
+              college in the state of Keralam, CET has grown into a prestigious
               institution recognized nationwide for its academic rigor and
               research contributions.
             </p>
@@ -157,7 +157,7 @@ export default function About() {
             <h3 className="font-display text-xl font-semibold text-gray-900 mb-3">
               Vision
             </h3>
-            <p className="text-lg text-blue-600 leading-relaxed italic">
+            <p className="text-lg text-blue-600 leading-relaxed italic text-justify">
               National Level Excellence and International Visibility in Every
               Facet of Engineering Research and Education.
             </p>
@@ -175,7 +175,7 @@ export default function About() {
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2.5 shrink-0" />
-                  <p className="text-lg text-blue-600 leading-relaxed italic">
+                  <p className="text-lg text-blue-600 leading-relaxed italic text-justify">
                     {item}
                   </p>
                 </li>
@@ -202,7 +202,7 @@ export default function About() {
               <h3 className="font-display text-xl font-semibold text-gray-900 mb-3">
                 {item.title}
               </h3>
-              <p className="text-base sm:text-lg text-gray-900 leading-relaxed">
+              <p className="text-base sm:text-lg text-gray-900 leading-relaxed text-justify">
                 {item.text}
               </p>
             </GlassCard>
@@ -232,7 +232,7 @@ export default function About() {
               Departments
             </span>
           </h2>
-          <p className="mt-3 text-lg text-blue-600 max-w-2xl mx-auto">
+          <p className="mt-3 text-lg text-blue-600 max-w-2xl mx-auto text-justify">
             The conference is jointly organized by three leading departments of
             College of Engineering Trivandrum. The collaboration of these three
             departments brings together a wealth of expertise, fostering
@@ -252,7 +252,7 @@ export default function About() {
                   <h3 className="font-display text-2xl font-semibold text-gray-900 mb-3">
                     {dept.name}
                   </h3>
-                  <p className="text-lg text-gray-900 leading-relaxed">
+                  <p className="text-lg text-gray-900 leading-relaxed text-justify">
                     {dept.text}
                   </p>
                   <a

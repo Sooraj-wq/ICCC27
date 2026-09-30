@@ -19,7 +19,7 @@ export default function Venue() {
             </span>
           </h1>
           <p className="mt-3 text-lg text-blue-600 max-w-lg mx-auto">
-            Kerala's first engineering college — since 1939.
+            Keralam's first engineering college — since 1939.
           </p>
         </div>
 
@@ -37,7 +37,7 @@ export default function Venue() {
                       College of Engineering Trivandrum
                     </p>
                     <p className="text-sm text-blue-600">
-                      Kulathoor, Thiruvananthapuram, Kerala 695583, India
+                      Kulathoor, Thiruvananthapuram, Keralam 695583, India
                     </p>
                   </div>
                 </div>
@@ -69,7 +69,7 @@ export default function Venue() {
               <h2 className="font-display text-2xl font-semibold text-gray-900 mb-3">
                 Conference Facilities
               </h2>
-              <p className="text-blue-600 text-base leading-relaxed">
+              <p className="text-blue-600 text-base leading-relaxed text-justify">
                 The college campus has well-equipped venues at CETAA Hall, C-CUBE Hall, Research Seminar Hall (EE), Research Seminar Hall (ECE), and SDP Hall (CSE) for staging presentations. Ample open/closed-door space for gatherings, amenity centres, and restroom facilities are available on campus.
               </p>
             </GlassCard>

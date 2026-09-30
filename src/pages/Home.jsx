@@ -4,12 +4,11 @@ import Button from "../components/Button";
 import SectionDivider from "../components/SectionDivider";
 import Carousel from "../components/Carousel";
 import { submissionDates } from "../data/schedule";
-import { FiCalendar, FiMapPin, FiUsers, FiArrowRight } from "react-icons/fi";
+import { FiCalendar, FiMapPin, FiArrowRight } from "react-icons/fi";
 
 const highlights = [
   { icon: FiCalendar, label: "Date", value: "May 21–23, 2027" },
   { icon: FiMapPin, label: "Venue", value: "College of Engineering Trivandrum" },
-  { icon: FiUsers, label: "Attendees", value: "155+ Researchers" },
 ];
 
 export default function Home() {
@@ -39,7 +38,7 @@ export default function Home() {
               <p className="mt-4 text-lg sm:text-xl font-bold text-gray-800">
                 Technical co-sponsor: IEEE Kerala Section
               </p>
-              <p className="mt-6 text-xl sm:text-2xl text-gray-900 max-w-3xl mx-auto lg:mx-0 leading-relaxed">
+              <p className="mt-6 text-xl sm:text-2xl text-gray-900 max-w-3xl mx-auto lg:mx-0 leading-relaxed text-justify">
                 ICCC 2027 provides an international platform for researchers, academicians, industry professionals, and students to share innovative ideas, recent research findings, and technological advancements.
               </p>
               <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-8">
@@ -80,7 +79,7 @@ export default function Home() {
       <SectionDivider />
 
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 max-w-3xl mx-auto">
           {highlights.map((item) => (
             <GlassCard key={item.label} className="p-6 flex items-center gap-4">
               <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500/20 to-indigo-500/20 border border-blue-200 flex items-center justify-center shrink-0">
@@ -109,11 +108,11 @@ export default function Home() {
         </div>
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
           <div className="max-w-3xl">
-            <p className="text-lg text-gray-900 leading-relaxed">
+            <p className="text-lg text-gray-900 leading-relaxed text-justify">
               ICCC 2027 aims to provide an international platform for researchers, academicians, industry professionals, and students to share innovative ideas, recent research findings, and technological advancements in the broad areas of Control, Communication, and Computing. The conference will feature keynote talks, invited lectures, and peer-reviewed paper presentations covering emerging trends and interdisciplinary research.
             </p>
-            <p className="mt-4 text-lg text-gray-900 leading-relaxed">
-              The conference is organized by the College of Engineering Trivandrum (CET), the first engineering college in the state of Kerala, established in 1939. The technical program focuses on areas including Intelligent Control Systems, Robotics and Automation, Signal Processing, Wireless Communication, VLSI and Embedded Systems, Advanced Algorithms, Cloud Computing and IoT, Cyber Physical Systems, Data Science, Artificial Intelligence and Machine Learning, Natural Language Processing, Computer Vision, Security and Privacy, Parallel and Distributed Computing, and Software Engineering.
+            <p className="mt-4 text-lg text-gray-900 leading-relaxed text-justify">
+              The conference is organized by the College of Engineering Trivandrum (CET), the first engineering college in the state of Keralam, established in 1939. The technical program focuses on areas including Intelligent Control Systems, Robotics and Automation, Signal Processing, Wireless Communication, VLSI and Embedded Systems, Advanced Algorithms, Cloud Computing and IoT, Cyber Physical Systems, Data Science, Artificial Intelligence and Machine Learning, Natural Language Processing, Computer Vision, Security and Privacy, Parallel and Distributed Computing, and Software Engineering.
             </p>
           </div>
           <div className="flex justify-center">
@@ -122,20 +121,6 @@ export default function Home() {
               alt="ICCC 2027 Conference Logo"
               className="w-full max-w-xs sm:max-w-sm h-auto rounded-2xl border border-white/60 shadow-xl bg-white"
             />
-          </div>
-        </div>
-        <div className="mt-10 flex flex-wrap justify-center gap-10">
-          <div className="text-center">
-            <p className="text-3xl font-display font-bold text-gray-900">155+</p>
-            <p className="text-sm text-blue-500">Expected Participants</p>
-          </div>
-          <div className="text-center">
-            <p className="text-3xl font-display font-bold text-gray-900">132</p>
-            <p className="text-sm text-blue-500">Faculty with PhD</p>
-          </div>
-          <div className="text-center">
-            <p className="text-3xl font-display font-bold text-gray-900">21</p>
-            <p className="text-sm text-blue-500">IEEE Members on Faculty</p>
           </div>
         </div>
       </section>
@@ -161,10 +146,10 @@ export default function Home() {
                       left ? "lg:text-right lg:pr-10" : "lg:ml-auto lg:pl-10"
                     }`}
                   >
-                    <p className="text-base font-semibold text-amber-600 font-mono">
+                    <p className="text-xl sm:text-2xl font-semibold text-amber-600 font-mono">
                       {m.date}
                     </p>
-                    <p className="text-sm text-blue-600 mt-0.5">{m.label}</p>
+                    <p className="text-base sm:text-lg text-gray-900 mt-1">{m.label}</p>
                   </div>
                 </div>
               );

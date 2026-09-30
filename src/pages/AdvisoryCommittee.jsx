@@ -23,7 +23,7 @@ export default function AdvisoryCommittee() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {advisory.map((region) => (
             <GlassCard key={region.region} className="p-6 sm:p-8">
               <h3 className="font-display text-lg font-semibold text-gray-900 mb-5">

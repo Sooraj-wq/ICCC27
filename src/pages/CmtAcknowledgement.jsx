@@ -24,7 +24,7 @@ export default function CmtAcknowledgement() {
               className="mx-auto mb-8"
               style={{ width: "200px", height: "64px" }}
             />
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-lg text-gray-700 leading-relaxed text-justify">
               The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
             </p>
           </GlassCard>

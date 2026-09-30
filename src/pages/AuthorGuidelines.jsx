@@ -70,7 +70,7 @@ export default function AuthorGuidelines() {
                   Instructions
                 </h3>
                 <ol className="space-y-3 list-decimal list-inside">
-                  <li className="text-base sm:text-lg text-gray-900 leading-relaxed">
+                  <li className="text-base sm:text-lg text-gray-900 leading-relaxed text-justify">
                     Use only{" "}
                     <a
                       href="https://www.ieee.org/conferences/publishing/templates.html"
@@ -82,12 +82,12 @@ export default function AuthorGuidelines() {
                     </a>
                     .
                   </li>
-                  <li className="text-base sm:text-lg text-gray-900 leading-relaxed">
+                  <li className="text-base sm:text-lg text-gray-900 leading-relaxed text-justify">
                     The maximum length of the paper for review is 6 pages
                     including references. The maximum file size allowed is 10 MB
                     in PDF format without encryption and/or passwords.
                   </li>
-                  <li className="text-base sm:text-lg text-gray-900 leading-relaxed">
+                  <li className="text-base sm:text-lg text-gray-900 leading-relaxed text-justify">
                     Papers having poor quality and/or high similarity index will
                     be desk rejected (without review).
                   </li>
@@ -139,22 +139,22 @@ export default function AuthorGuidelines() {
                   Procedure for Uploading Papers
                 </h3>
                 <ol className="space-y-3 list-decimal list-inside">
-                  <li className="text-base sm:text-lg text-gray-900 leading-relaxed">
+                  <li className="text-base sm:text-lg text-gray-900 leading-relaxed text-justify">
                     Go to the paper submission website. The conference uses the
                     Microsoft CMT service for managing the peer-reviewing
                     process. The submission portal link will be shared on this
                     page once it opens.
                   </li>
-                  <li className="text-base sm:text-lg text-gray-900 leading-relaxed">
+                  <li className="text-base sm:text-lg text-gray-900 leading-relaxed text-justify">
                     If you are new to the system, choose "Register" at the bottom
                     of the dialog box.
                   </li>
-                  <li className="text-base sm:text-lg text-gray-900 leading-relaxed">
+                  <li className="text-base sm:text-lg text-gray-900 leading-relaxed text-justify">
                     Follow the wizard to finish the registration. Upon finishing,
                     you'll have an account in the system with user ID and
                     password.
                   </li>
-                  <li className="text-base sm:text-lg text-gray-900 leading-relaxed">
+                  <li className="text-base sm:text-lg text-gray-900 leading-relaxed text-justify">
                     Log into the system using your login account info (email
                     address and password). From the drop down menu, select the
                     track to which you want to send the papers. It is the
@@ -164,13 +164,13 @@ export default function AuthorGuidelines() {
                     submitting the paper to only one track. Otherwise, your
                     paper will be rejected.
                   </li>
-                  <li className="text-base sm:text-lg text-gray-900 leading-relaxed">
+                  <li className="text-base sm:text-lg text-gray-900 leading-relaxed text-justify">
                     Fill out the submission form: "Title", "Abstract", and
                     "Authors" and enter email ID and details of all the co-authors
                     (Name, Designation, Institute and the Country to which your
                     institute is affiliated etc.) and "Submit" your paper.
                   </li>
-                  <li className="text-base sm:text-lg text-gray-900 leading-relaxed">
+                  <li className="text-base sm:text-lg text-gray-900 leading-relaxed text-justify">
                     After successful submission, a confirmation email will be
                     sent to all authors by the Microsoft CMT system.
                   </li>
@@ -181,7 +181,7 @@ export default function AuthorGuidelines() {
                 <h3 className="font-display text-2xl font-semibold text-gray-900 mb-4">
                   AI Usage Disclosure
                 </h3>
-                <p className="text-base sm:text-lg text-gray-900 leading-relaxed">
+                <p className="text-base sm:text-lg text-gray-900 leading-relaxed text-justify">
                   During the preparation of this manuscript, the authors used
                   generative artificial intelligence tools, including ChatGPT, for
                   limited assistance with language editing, grammar correction,
@@ -211,7 +211,7 @@ export default function AuthorGuidelines() {
                 ].map((item) => (
                   <li
                     key={item}
-                    className="flex items-start gap-3 text-base sm:text-lg text-gray-900 leading-relaxed"
+                    className="flex items-start gap-3 text-base sm:text-lg text-gray-900 leading-relaxed text-justify"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2.5 shrink-0" />
                     {item}
@@ -227,16 +227,16 @@ export default function AuthorGuidelines() {
                 <h3 className="font-display text-2xl font-semibold text-gray-900 mb-4">
                   Camera-Ready Paper Submission Guidelines
                 </h3>
-                <p className="text-base sm:text-lg text-gray-900 leading-relaxed">
+                <p className="text-base sm:text-lg text-gray-900 leading-relaxed text-justify">
                   The authors need to submit the following files in the
                   Camera-Ready Submission section:
                 </p>
                 <ol className="mt-3 space-y-2 list-decimal list-inside">
-                  <li className="text-base sm:text-lg text-gray-900 leading-relaxed">
+                  <li className="text-base sm:text-lg text-gray-900 leading-relaxed text-justify">
                     Camera-Ready Paper (Paper must be renamed with PID_paper ID.
                     Example: Paper ID 1 &rarr; PID_001)
                   </li>
-                  <li className="text-base sm:text-lg text-gray-900 leading-relaxed">
+                  <li className="text-base sm:text-lg text-gray-900 leading-relaxed text-justify">
                     Reviewer Response (Paper must be renamed with
                     ReviewResponse_paper ID. Example: Paper ID 1 &rarr;
                     ReviewResponse_001)
@@ -245,13 +245,13 @@ export default function AuthorGuidelines() {
               </div>
 
               <div>
-                <p className="text-base sm:text-lg text-gray-900 leading-relaxed">
+                <p className="text-base sm:text-lg text-gray-900 leading-relaxed text-justify">
                   At least one author must register and present the selected
                   paper at ICCC 2027 for the paper to be considered for inclusion
                   in IEEE Xplore. The registration link will be shared once
                   registrations open.
                 </p>
-                <p className="mt-3 text-base sm:text-lg text-gray-900 leading-relaxed">
+                <p className="mt-3 text-base sm:text-lg text-gray-900 leading-relaxed text-justify">
                   Authors must submit the camera-ready version as per the
                   guidelines given on the conference website and below, on or
                   before Mar 1, 2027. The last date for registration will be
@@ -273,7 +273,7 @@ export default function AuthorGuidelines() {
                   ].map((item) => (
                     <li
                       key={item}
-                      className="flex items-start gap-3 text-base sm:text-lg text-gray-900 leading-relaxed"
+                      className="flex items-start gap-3 text-base sm:text-lg text-gray-900 leading-relaxed text-justify"
                     >
                       <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2.5 shrink-0" />
                       {item}
@@ -287,14 +287,14 @@ export default function AuthorGuidelines() {
                   Copyright Clearance Code
                 </h3>
                 <ul className="space-y-2">
-                  <li className="text-base sm:text-lg text-gray-900 leading-relaxed">
+                  <li className="text-base sm:text-lg text-gray-900 leading-relaxed text-justify">
                     For papers in which all authors are employed by the US
                     government, the copyright notice is:{" "}
                     <span className="font-semibold">
                       U.S. Government work not protected by U.S. copyright
                     </span>
                   </li>
-                  <li className="text-base sm:text-lg text-gray-900 leading-relaxed">
+                  <li className="text-base sm:text-lg text-gray-900 leading-relaxed text-justify">
                     For papers in which all authors are employed by a Crown
                     government (UK, Canada, and Australia), the copyright notice
                     is:{" "}
@@ -302,21 +302,21 @@ export default function AuthorGuidelines() {
                       979-8-3315-1949-0/27/$31.00 ©2027 Crown
                     </span>
                   </li>
-                  <li className="text-base sm:text-lg text-gray-900 leading-relaxed">
+                  <li className="text-base sm:text-lg text-gray-900 leading-relaxed text-justify">
                     For papers in which all authors are employed by the European
                     Union, the copyright notice is:{" "}
                     <span className="font-semibold">
                       979-8-3315-1949-0/27/$31.00 ©2027 European Union
                     </span>
                   </li>
-                  <li className="text-base sm:text-lg text-gray-900 leading-relaxed">
+                  <li className="text-base sm:text-lg text-gray-900 leading-relaxed text-justify">
                     For all other papers the copyright notice is:{" "}
                     <span className="font-semibold">
                       979-8-3315-1949-0/27/$31.00 ©2027 IEEE
                     </span>
                   </li>
                 </ul>
-                <p className="mt-3 text-base sm:text-lg text-gray-900 leading-relaxed">
+                <p className="mt-3 text-base sm:text-lg text-gray-900 leading-relaxed text-justify">
                   Authors must format their Camera-Ready Paper using IEEE PDF
                   eXpress and upload the IEEE-compliant PDF.
                 </p>
@@ -327,7 +327,7 @@ export default function AuthorGuidelines() {
                   IEEE PDF eXpress Instructions
                 </h3>
                 <ul className="space-y-3">
-                  <li className="text-base sm:text-lg text-gray-900 leading-relaxed">
+                  <li className="text-base sm:text-lg text-gray-900 leading-relaxed text-justify">
                     Login to{" "}
                     <a
                       href="https://ieee-pdf-express.org/"
@@ -339,17 +339,17 @@ export default function AuthorGuidelines() {
                     </a>
                     .
                   </li>
-                  <li className="text-base sm:text-lg text-gray-900 leading-relaxed">
+                  <li className="text-base sm:text-lg text-gray-900 leading-relaxed text-justify">
                     First-time users: Click "New Users &ndash; Click Here", enter
                     the conference-specific Conference ID (to be announced), your
                     email address and a password, and follow the prompts to
                     complete the setup.
                   </li>
-                  <li className="text-base sm:text-lg text-gray-900 leading-relaxed">
+                  <li className="text-base sm:text-lg text-gray-900 leading-relaxed text-justify">
                     Returning users should use the same account from previous
                     conferences. Verify your contact information is correct.
                   </li>
-                  <li className="text-base sm:text-lg text-gray-900 leading-relaxed">
+                  <li className="text-base sm:text-lg text-gray-900 leading-relaxed text-justify">
                     Download the PDF-compliant file from IEEE PDF eXpress and
                     upload it via the CMT Camera-Ready Paper Submission Portal.
                   </li>
@@ -360,7 +360,7 @@ export default function AuthorGuidelines() {
                 <h3 className="font-display text-xl font-semibold text-gray-900 mb-3">
                   IEEE Copyright Transfer Submission
                 </h3>
-                <p className="text-base sm:text-lg text-gray-900 leading-relaxed">
+                <p className="text-base sm:text-lg text-gray-900 leading-relaxed text-justify">
                   To have your paper included in IEEE Xplore, the
                   corresponding/submitting author must transfer the copyright to
                   IEEE. The IEEE eCF (Electronic Copyright Form) submission is
@@ -378,7 +378,7 @@ export default function AuthorGuidelines() {
                   ].map((item) => (
                     <li
                       key={item}
-                      className="flex items-start gap-3 text-base sm:text-lg text-gray-900 leading-relaxed"
+                      className="flex items-start gap-3 text-base sm:text-lg text-gray-900 leading-relaxed text-justify"
                     >
                       <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2.5 shrink-0" />
                       {item}
@@ -388,7 +388,7 @@ export default function AuthorGuidelines() {
               </div>
 
               <div>
-                <p className="text-base sm:text-lg text-gray-900 leading-relaxed">
+                <p className="text-base sm:text-lg text-gray-900 leading-relaxed text-justify">
                   <span className="font-semibold">
                     Important formatting instruction:
                   </span>{" "}
@@ -396,7 +396,7 @@ export default function AuthorGuidelines() {
                   placeholders from the IEEE template and should not appear in
                   the final submission.
                 </p>
-                <p className="mt-3 text-base sm:text-lg font-semibold text-red-600">
+                <p className="mt-3 text-base sm:text-lg font-semibold text-red-600 text-justify">
                   Failure to comply with the above instructions may result in
                   rejection from IEEE Xplore.
                 </p>

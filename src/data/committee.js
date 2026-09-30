@@ -5,17 +5,17 @@ export const leadership = [
       {
         role: "Chief Patron",
         name: "Bishwanath Sinha, IAS",
-        affiliation: "Chief Secretary, Government of Kerala",
+        affiliation: "Chief Secretary, Government of Keralam",
       },
       {
         role: "Patron",
         name: "Dr. B. Ashok IAS",
-        affiliation: "Principal Secretary, Higher Education Department, Government of Kerala",
+        affiliation: "Principal Secretary, Higher Education Department, Government of Keralam",
       },
       {
         role: "Co-Patron",
         name: "Dr. Jayaprakash P",
-        affiliation: "Director of Technical Education, Government of Kerala",
+        affiliation: "Director of Technical Education, Government of Keralam",
       },
     ],
   },
@@ -323,24 +323,6 @@ export const committees = [
 
 export const advisory = [
   {
-    region: "From Keralam",
-    members: [
-      { name: "Prof. (Dr.) Ranjith Ravindran", affiliation: "NIT Calicut" },
-      { name: "Prof. (Dr.) Deepak Mishra", affiliation: "IIST Trivandrum" },
-      { name: "Prof. (Dr.) Sneha Gajbhiye", affiliation: "IIT Palakkad" },
-      { name: "Prof. (Dr.) Madhu Kumar S.D.", affiliation: "NIT Calicut" },
-      { name: "Prof. (Dr.) Kumaravel S.", affiliation: "NIT Calicut" },
-      { name: "Prof. (Dr.) Vipin Venugopal", affiliation: "Amrita University" },
-      { name: "Prof. (Dr.) Leena Mary", affiliation: "IIIT Kottayam" },
-      { name: "Prof. (Dr.) Arun Balakrishnan", affiliation: "CUSAT" },
-      { name: "Prof. (Dr.) Alwin Poulose", affiliation: "IISER" },
-      { name: "Prof. (Dr.) Anoop Thomas", affiliation: "IIT Palakkad" },
-      { name: "Prof. (Dr.) Jobin Francis", affiliation: "IIT Palakkad" },
-      { name: "Prof. (Dr.) Birenjith Sasidharan", affiliation: "IIT Palakkad" },
-      { name: "Prof. (Dr.) Gopakumar G", affiliation: "NIT Calicut" },
-    ],
-  },
-  {
     region: "National",
     members: [
       { name: "Prof. (Dr.) Hemendra Arya", affiliation: "IIT Bombay" },
@@ -356,6 +338,19 @@ export const advisory = [
       { name: "Prof. (Dr.) Rajesh Devaraj", affiliation: "Senior System Software Engineer, Nvidia Graphics, Bengaluru" },
       { name: "Prof. (Dr.) Arnab Sarkar", affiliation: "IIT Kharagpur" },
       { name: "Prof. (Dr.) Sanjay Moulik", affiliation: "IIIT Guwahati" },
+      { name: "Prof. (Dr.) Ranjith Ravindran", affiliation: "NIT Calicut" },
+      { name: "Prof. (Dr.) Deepak Mishra", affiliation: "IIST Trivandrum" },
+      { name: "Prof. (Dr.) Sneha Gajbhiye", affiliation: "IIT Palakkad" },
+      { name: "Prof. (Dr.) Madhu Kumar S.D.", affiliation: "NIT Calicut" },
+      { name: "Prof. (Dr.) Kumaravel S.", affiliation: "NIT Calicut" },
+      { name: "Prof. (Dr.) Vipin Venugopal", affiliation: "Amrita University" },
+      { name: "Prof. (Dr.) Leena Mary", affiliation: "IIIT Kottayam" },
+      { name: "Prof. (Dr.) Arun Balakrishnan", affiliation: "CUSAT" },
+      { name: "Prof. (Dr.) Alwin Poulose", affiliation: "IISER" },
+      { name: "Prof. (Dr.) Anoop Thomas", affiliation: "IIT Palakkad" },
+      { name: "Prof. (Dr.) Jobin Francis", affiliation: "IIT Palakkad" },
+      { name: "Prof. (Dr.) Birenjith Sasidharan", affiliation: "IIT Palakkad" },
+      { name: "Prof. (Dr.) Gopakumar G", affiliation: "NIT Calicut" },
     ],
   },
   {
