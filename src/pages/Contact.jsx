@@ -55,7 +55,9 @@ export default function Contact() {
                       <br />
                       Thiruvananthapuram,
                       <br />
-                      Kerala
+                      Keralam,
+                      <br />
+                      India
                       <br />
                       PIN 695016
                     </p>
@@ -93,7 +95,9 @@ export default function Contact() {
               <br />
               Thiruvananthapuram,
               <br />
-              Kerala
+              Keralam,
+              <br />
+              India
               <br />
               PIN 695016
             </p>

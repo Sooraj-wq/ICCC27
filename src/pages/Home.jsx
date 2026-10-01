@@ -25,14 +25,18 @@ export default function Home() {
                 <span className="w-1.5 h-1.5 rounded-full bg-blue-500 shadow-[0_0_6px_rgba(59,130,246,0.5)] animate-pulse" />
                 May 21–23, 2027 · Trivandrum, India
               </div>
-              <h1 className="font-display text-[clamp(1.15rem,1.05rem+1.5vw,3rem)] font-bold leading-[1.15] text-balance text-gray-900">
-                7<sup>th</sup> International Conference on{" "}
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-indigo-300 to-purple-400">
-                  Control, Communication
-                </span>{" "}
-                and{" "}
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-indigo-300 to-blue-400">
-                  Computing
+              <h1 className="font-display text-[clamp(1.15rem,1.05rem+1.5vw,3rem)] font-bold leading-[1.15] text-gray-900">
+                <span className="block">
+                  7<sup>th</sup> International Conference on
+                </span>
+                <span className="block">
+                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-indigo-300 to-purple-400">
+                    Control, Communication
+                  </span>{" "}
+                  and{" "}
+                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-indigo-300 to-blue-400">
+                    Computing
+                  </span>
                 </span>
               </h1>
               <p className="mt-4 text-lg sm:text-xl font-bold text-gray-800">

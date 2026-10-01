@@ -103,14 +103,11 @@ export default function Registration() {
             <li className="flex items-start gap-3">
               <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2.5 shrink-0" />
               <p className="text-base sm:text-lg text-gray-900 leading-relaxed text-justify">
-                A full registration covers the registration of one paper. You may
-                register an additional paper for a fee of ₹2,000 or $50. Please
-                note that while the additional paper will be included in the
-                conference proceedings and presentation certificates will be
-                issued, it will not be submitted to IEEE Xplore for possible
-                publication. Only papers associated with a full author
-                registration will be eligible for possible publication in IEEE
-                Xplore.
+                A full registration covers the registration of one paper. An author
+                may register a maximum of two papers, with the additional paper
+                requiring a fee of ₹2,000 or $50. Only papers associated with a
+                full author registration will be eligible for possible
+                publication in IEEE Xplore.
               </p>
             </li>
             <li className="flex items-start gap-3">

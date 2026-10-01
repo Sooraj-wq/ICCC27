@@ -181,6 +181,11 @@ export default function AuthorGuidelines() {
                 <h3 className="font-display text-2xl font-semibold text-gray-900 mb-4">
                   AI Usage Disclosure
                 </h3>
+                  <p className="mt-3 italic mb-3 text-base sm:text-lg text-gray-900 leading-relaxed text-justify">
+                  Authors who have used AI tools in any part of the manuscript
+                  preparation are required to include this disclosure in their
+                  submission.
+                </p>
                 <p className="text-base sm:text-lg text-gray-900 leading-relaxed text-justify">
                   During the preparation of this manuscript, the authors used
                   generative artificial intelligence tools, including ChatGPT, for

@@ -59,8 +59,8 @@ export const committees = [
         heading: "Chair",
         people: [
           {
-            name: "Dr. Jerrin Thomas Panachakel",
-            affiliation: "Assistant Professor, Dept. of ECE, CET",
+            name: "Dr. Christy James Jose",
+            affiliation: "Associate Professor, Dept. of ECE, CET",
           },
         ],
       },
@@ -69,11 +69,11 @@ export const committees = [
         people: [
           { name: "Dr. P Jaya Kumar", affiliation: "Professor, Dept. of EE, CET" },
           {
-            name: "Dr. Christy James Jose",
+            name: "Dr. Linu Shine",
             affiliation: "Associate Professor, Dept. of ECE, CET",
           },
           {
-            name: "Dr. Rani Koshy",
+            name: "Dr. Dhanya S Pankaj",
             affiliation: "Assistant Professor, Dept. of CSE, CET",
           },
         ],
@@ -86,8 +86,8 @@ export const committees = [
             affiliation: "Associate Professor, Dept. of EE, CET",
           },
           {
-            name: "Dr. Linu Shine",
-            affiliation: "Assistant Professor, Dept. of ECE, CET",
+            name: "Dr. Sivakumar R",
+            affiliation: "Professor, Dept. of ECE, CET",
           },
           {
             name: "Dr. Thasni T",
@@ -105,7 +105,7 @@ export const committees = [
         people: [
           {
             name: "Prof. Baby Syla",
-            affiliation: "Associate Professor, Dept. of CSE, CET",
+            affiliation: "Assistant Professor, Dept. of CSE, CET",
           },
         ],
       },
@@ -126,7 +126,7 @@ export const committees = [
         heading: "Chair",
         people: [
           {
-            name: "Dr. Harikumar R",
+            name: "Dr. Hari Kumar R",
             affiliation: "Associate Professor, Dept. of EE, CET",
           },
         ],
@@ -188,8 +188,8 @@ export const committees = [
         heading: "Members",
         people: [
           { name: "Prof. Divya N A", affiliation: "Assistant Professor, Dept. of EE, CET" },
-          { name: "Prof. Anoopa S", affiliation: "Assistant Professor, Dept. of CSE, CET" },
           { name: "Dr. Kiran R", affiliation: "Assistant Professor, Dept. of ECE, CET" },
+          { name: "Prof. Anoopa S", affiliation: "Assistant Professor, Dept. of CSE, CET" },
         ],
       },
     ],
@@ -229,7 +229,7 @@ export const committees = [
       {
         heading: "Members",
         people: [
-          { name: "Prof. Sohan Placid John", affiliation: "Assistant Professor, Dept. of EE, CET" },
+          { name: "Prof. Sabir V E", affiliation: "Assistant Professor, Dept. of EE, CET" },
           { name: "Prof. Monish M", affiliation: "Assistant Professor, Dept. of EE, CET" },
           { name: "Dr. Nikhil M", affiliation: "Assistant Professor, Dept. of ECE, CET" },
           { name: "Mrs. Prasobha K Prasad", affiliation: "Instructor Gr. I, Dept. of ECE, CET" },
