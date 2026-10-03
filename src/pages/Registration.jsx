@@ -54,10 +54,10 @@ const feeRows = [
   },
   {
     category: "Foreign Author — Additional Papers*",
-    earlyIEEE: "$50/paper",
-    earlyNonIEEE: "$50/paper",
-    stdIEEE: "$75/paper",
-    stdNonIEEE: "$75/paper",
+    earlyIEEE: "$75/paper",
+    earlyNonIEEE: "$75/paper",
+    stdIEEE: "$100/paper",
+    stdNonIEEE: "$100/paper",
   },
 ];
 
@@ -100,16 +100,16 @@ export default function Registration() {
                 working lunch and banquet dinner.
               </p>
             </li>
+
             <li className="flex items-start gap-3">
               <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2.5 shrink-0" />
               <p className="text-base sm:text-lg text-gray-900 leading-relaxed text-justify">
-                A full registration covers the registration of one paper. An author
-                may register a maximum of two papers, with the additional paper
-                requiring a fee of ₹2,000 or $50. Only papers associated with a
-                full author registration will be eligible for possible
-                publication in IEEE Xplore.
+                A full registration covers one paper. An author may register a maximum of two papers. 
+                The additional paper will incur a fee of ₹3,000 or $75 during the early-bird registration period, and ₹4,000 or $100 during the standard registration period. 
+                Only papers linked to a full author registration will be eligible for possible publication in IEEE Xplore.
               </p>
             </li>
+
             <li className="flex items-start gap-3">
               <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2.5 shrink-0" />
               <p className="text-base sm:text-lg text-gray-900 leading-relaxed text-justify">
@@ -118,6 +118,7 @@ export default function Registration() {
                 (with a maximum of 2 pages).
               </p>
             </li>
+
             <li className="flex items-start gap-3">
               <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2.5 shrink-0" />
               <p className="text-base sm:text-lg text-gray-900 leading-relaxed text-justify">
@@ -147,6 +148,7 @@ export default function Registration() {
                 <col className="w-[16%]" />
                 <col className="w-[16%]" />
               </colgroup>
+
               <thead>
                 <tr className="text-xs uppercase tracking-wider">
                   <th
@@ -155,12 +157,14 @@ export default function Registration() {
                   >
                     Category
                   </th>
+
                   <th
                     colSpan={2}
                     className="px-3 py-3 text-center font-bold text-blue-600 border-b border-l border-gray-200/60 bg-blue-50/50"
                   >
                     Early Bird Rates
                   </th>
+
                   <th
                     colSpan={2}
                     className="px-3 py-3 text-center font-bold text-indigo-600 border-b border-l border-gray-200/60 bg-indigo-50/50"
@@ -168,21 +172,26 @@ export default function Registration() {
                     Standard Rates
                   </th>
                 </tr>
+
                 <tr className="text-xs uppercase tracking-wider text-gray-600">
                   <th className="px-3 py-3 text-center font-semibold border-b border-l border-gray-200/60 bg-gray-50/50">
                     IEEE Member
                   </th>
+
                   <th className="px-3 py-3 text-center font-semibold border-b border-gray-200/60 bg-gray-50/50">
                     Non-IEEE
                   </th>
+
                   <th className="px-3 py-3 text-center font-semibold border-b border-l border-gray-200/60 bg-gray-50/50">
                     IEEE Member
                   </th>
+
                   <th className="px-3 py-3 text-center font-semibold border-b border-gray-200/60 bg-gray-50/50">
                     Non-IEEE
                   </th>
                 </tr>
               </thead>
+
               <tbody className="divide-y divide-gray-200/50 text-sm">
                 {feeRows.map((row) => (
                   <tr
@@ -192,15 +201,19 @@ export default function Registration() {
                     <td className="px-5 py-4 font-medium text-gray-900 break-words">
                       {row.category}
                     </td>
+
                     <td className="px-3 py-4 text-center border-l border-gray-200/50 text-blue-600 font-semibold">
                       {row.earlyIEEE}
                     </td>
+
                     <td className="px-3 py-4 text-center text-gray-700">
                       {row.earlyNonIEEE}
                     </td>
+
                     <td className="px-3 py-4 text-center border-l border-gray-200/50 text-indigo-600 font-semibold">
                       {row.stdIEEE}
                     </td>
+
                     <td className="px-3 py-4 text-center text-gray-700">
                       {row.stdNonIEEE}
                     </td>
@@ -213,6 +226,10 @@ export default function Registration() {
 
         <p className="text-center mt-6 text-sm text-gray-500">
           * Additional paper charges apply per paper | Maximum of 2 submissions allowed.
+        </p>
+
+        <p className="text-center mt-2 text-sm font-semibold text-gray-600">
+          All fees listed above are exclusive of GST.
         </p>
       </section>
     </div>
