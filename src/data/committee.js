@@ -127,7 +127,7 @@ export const committees = [
         people: [
           {
             name: "Dr. Hari Kumar R",
-            affiliation: "Associate Professor, Dept. of EE, CET",
+            affiliation: "Professor, Dept. of EE, CET",
           },
         ],
       },
