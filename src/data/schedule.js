@@ -42,7 +42,7 @@ export const scheduleData = {
 
 export const submissionDates = [
   { date: "Oct 1, 2026", label: "Call for Papers Announcement", status: "done" },
-  { date: "Oct 15 – Dec 15, 2026", label: "Paper Submission", status: "upcoming" },
+  { date: "Oct 15 – Dec 15, 2026", label: "Paper Submission", status: "done" },
   { date: "Feb 15, 2027", label: "Notification of Acceptance", status: "upcoming" },
   { date: "Mar 1, 2027", label: "Camera-Ready Paper", status: "upcoming" },
   { date: "May 21–23, 2027", label: "Conference Dates", status: "upcoming" },
